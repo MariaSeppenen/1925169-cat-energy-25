@@ -39,130 +39,124 @@
     </header>
 
     <main class="main-container-form">
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-      <section class="form">
-        <div class="form__wrapper">
-          <h2 class="form__title">Подбор программы</h2>
-          <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+      <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+
+        <section class="form">
+          <div class="form__wrapper">
+
             <fieldset class="form__information information">
               <legend class="visually-hidden">Анкета кота</legend>
 
-              <label class="information__date date" for="options">
+              <label class="information__date date">
               <span class="date__text">Имя:*</span>
-              <input class="date__input" type="text" id="options" name="options-name" value="Барсик">
+              <input class="date__input" type="text" name="options-name" value="Барсик">
               </label>
 
-              <label class="information__date date" for="options">
+              <label class="information__date date">
               <span class="date__text">Вес (кг):*</span>
-              <input class="date__input" type="text" id="options" name="options-name" value="7">
+              <input class="date__input" type="text" name="options-name" value="7">
               </label>
 
-              <label class="information__date date" for="options">
+              <label class="information__date date">
                 <span class="date__text">Возраст (лет):</span>
-                <input class="date__input" type="text" id="options" name="options-name" value="7">
+                <input class="date__input" type="text" name="options-name" value="7">
               </label>
-          </fieldset>
-        </form>
-        </div>
-      </section>
+            </fieldset>
+          </div>
+        </section>
 
-      <section class="radio">
-        <div class="radio__wrapper">
-          <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+        <section class="radio">
+          <div class="radio__wrapper">
             <fieldset class="radio__program program">
               <legend class="visually-hidden">Выбор программы</legend>
 
-              <label class="program__option program-option" for="program-option">
-                <input class="program-option__radio-butten" type="radio" name="program-option" value="weight loss" checked>
-                <span class="program-mark radius-radio"></span>
-                <span class="program-label">Похудение</span>
+              <label class="program__option program-option">
+                <input class="program-option__radio-butten" type="radio" name="program-option" value="weight-loss" checked>
+                <span class="program-option__mark radius-radio"></span>
+                <span class="program-option__label">Похудение</span>
               </label>
 
-              <label class="program__option program-option" for="program-option">
-                <input class="program-option__radio-butten" type="radio" name="program-option" value="Mass gain">
-                <span class="program-mark radius-radio"></span>
-                <span class="program-label">Набор массы</span>
+              <label class="program__option program-option">
+                <input class="program-option__radio-butten" type="radio" name="program-option" value="Mass-ain">
+                <span class="program-option__mark radius-radio"></span>
+                <span class="program-option__label">Набор массы</span>
               </label>
 
-              <label class="program__option program-option" for="program-option">
-                <input class="program-option__radio-butten" type="radio" name="program-option" value="Need advice">
-                <span class="program-mark radius-radio"></span>
-                <span class="program-label">Не знаю (Нужен ваш совет)</span>
+              <label class="program__option program-option">
+                <input class="program-option__radio-butten" type="radio" name="program-option" value="Need-advice">
+                <span class="program-option__mark radius-radio"></span>
+                <span class="program-option__label">Не знаю (Нужен ваш совет)</span>
               </label>
             </fieldset>
-          </form>
-          </div>
-      </section>
+            </div>
+        </section>
 
-      <section class="form-contacts">
-        <div class="form-contacts__wrapper">
-          <h2 class="form-contacts__title">Контактные данные (владельца кота)</h2>
-          <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+        <section class="form-contacts">
+          <div class="form-contacts__wrapper">
+            <h2 class="form-contacts__title">Контактные данные (владельца кота)</h2>
             <fieldset class="form-contacts__contact client-contact">
               <legend class="visually-hidden">Контактные данные</legend>
 
-              <label class="client-contact__connections connection" for="connections">
+              <label class="client-contact__connections connection">
                 <span class="connection__text">E-mail:*</span>
-                <input class="connection__input" type="email" id="connections" name="connection-client" value="kuklachev@gmail.com">
+                <input class="connection__input" type="email" name="connection-client" value="kuklachev@gmail.com">
               </label>
 
-              <label class="client-contact__connections connection" for="connections">
+              <label class="client-contact__connections connection">
                 <span class="connection__text">Телефон:*</span>
-                <input class="connection__input" type="tel" id="connections" name="connection-client" value="8(960)900-60-90">
+                <input class="connection__input" type="tel" name="connection-client" value="8(960)900-60-90">
               </label>
             </fieldset>
-          </form>
-        </div>
-      </section>
-
-      <section class="form-comments">
-        <div class="form-comments__wrapper">
-          <h2 class="form-comments__title">Комментарий</h2>
-          <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
-            <label class="form-comments__comments comment" for="comments">
-            <input class="comment__input" type="text" id="comments" name="comments-client" value="Расскажите обо всех повадках кота">
-            </label>
-          </form>
           </div>
-      </section>
+        </section>
 
-      <section class="radio-products">
-        <div class="radio-products__wrapper">
-          <h2 class="radio-products__title">Дополнительно</h2>
-            <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="radio-products__program products">
-                <legend class="visually-hidden">Дополнительные продукты</legend>
+        <section class="form-comments">
+          <div class="form-comments__wrapper">
+            <h2 class="form-comments__title">Комментарий</h2>
+            <label class="form-comments__comments comment">
+              <input class="comment__input" type="text" name="comments-client" value="Расскажите обо всех повадках кота">
+            </label>
+          </div>
+        </section>
 
-                <label class="products__option program-products" for="program-product">
-                  <input class="program-products__checkbox-butten" type="checkbox" name="program-product" value="sweetener" checked>
-                  <span class="program-products-mark"></span>
-                  <span class="program-products-label">Сахарозаменитель</span>
-                </label>
+        <section class="radio-products">
+          <div class="radio-products__wrapper">
+            <h2 class="radio-products__title">Дополнительно</h2>
+            <fieldset class="radio-products__program products">
+              <legend class="visually-hidden">Дополнительные продукты</legend>
 
-                <label class="products__option program-products" for="program-product">
-                  <input class="program-products__checkbox-butten" type="checkbox" name="program-product" value="sweetener">
-                  <span class="program-products-mark"></span>
-                  <span class="program-products-label">Питьевая вода</span>
-                </label>
+              <label class="products__option program-products">
+                <input class="program-products__checkbox-butten" type="checkbox" name="program-product" value="sweetener" checked>
+                <span class="program-products__mark"></span>
+                <span class="program-products__label">Сахарозаменитель</span>
+              </label>
 
-                <label class="products__option program-products" for="program-product">
-                  <input class="program-products__checkbox-butten" type="checkbox" name="program-product" value="sweetener">
-                  <span class="program-products-mark"></span>
-                  <span class="program-products-label">Молоко</span>
-                </label>
+              <label class="products__option program-products">
+                <input class="program-products__checkbox-butten" type="checkbox" name="program-product" value="sweetener">
+                <span class="program-products__mark"></span>
+                <span class="program-products__label">Питьевая вода</span>
+              </label>
 
-                <label class="products__option program-products" for="program-product">
-                  <input class="program-products__checkbox-butten" type="checkbox" name="program-product" value="sweetener">
-                  <span class="program-products-mark"></span>
-                  <span class="program-products-label">Витамины</span>
-                </label>
-              </fieldset>
-            </form>
-        </div>
-      </section>
+              <label class="products__option program-products">
+                <input class="program-products__checkbox-butten" type="checkbox" name="program-product" value="sweetener">
+                <span class="program-products__mark"></span>
+                <span class="program-products__label">Молоко</span>
+              </label>
 
-      <button class="order-button" type="button">Отправить заявку</button>
+              <label class="products__option program-products">
+                <input class="program-products__checkbox-butten" type="checkbox" name="program-product" value="sweetener">
+                <span class="program-products__mark"></span>
+                <span class="program-products__label">Витамины</span>
+              </label>
+            </fieldset>
+          </div>
+        </section>
+
+        <button class="order-button" type="button">Отправить заявку</button>
+      </form>
       <p class="required-fields">* — Обязательные поля</p>
     </main>
 
