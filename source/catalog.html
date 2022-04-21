@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -23,9 +24,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>
-                Главная
-              </a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
@@ -61,7 +60,7 @@
                 <th class="row__card-price">700 Р.</th>
               </tr>
             </table>
-            <button class="list-card__button order-button" type="button">Заказать</button>
+            <button class="list-card__button main-button" type="button">Заказать</button>
           </li>
 
           <li class="production-list__card list-card">
@@ -82,7 +81,7 @@
                 <th class="row__card-price">1000 Р.</th>
               </tr>
             </table>
-            <button class="list-card__button order-button" type="button">Заказать</button>
+            <button class="list-card__button main-button" type="button">Заказать</button>
           </li>
 
           <li class="production-list__card list-card">
@@ -103,7 +102,7 @@
                 <th class="row__card-price">700 Р.</th>
               </tr>
             </table>
-            <button class="list-card__button order-button" type="button">Заказать</button>
+            <button class="list-card__button main-button" type="button">Заказать</button>
           </li>
 
           <li class="production-list__card list-card">
@@ -124,7 +123,7 @@
                 <th class="row__card-price">1000 Р.</th>
               </tr>
             </table>
-            <button class="list-card__button order-button" type="button">Заказать</button>
+            <button class="list-card__button main-button" type="button">Заказать</button>
           </li>
 
           <li class="production-list__card list-card">
@@ -145,7 +144,7 @@
                 <th class="row__card-price">400 Р.</th>
               </tr>
             </table>
-            <button class="list-card__button order-button" type="button">Заказать</button>
+            <button class="list-card__button main-button" type="button">Заказать</button>
           </li>
 
           <li class="production-list__card list-card">
@@ -166,7 +165,7 @@
                 <th class="row__card-price">700 Р.</th>
               </tr>
             </table>
-            <button class="list-card__button order-button" type="button">Заказать</button>
+            <button class="list-card__button main-button" type="button">Заказать</button>
           </li>
 
           <li class="production-list__card list-card">
@@ -174,30 +173,30 @@
             <img class="list-card__image" src="img/food-rice 500g.jpg" width="140" height="112" alt="Cat Energy Slim 500г">
             <h3 class="list-card__title">Cat Energy Slim 500 г</h3></a>
             <table class="list-card__options weight-desc">
-              <tr>
-                <th class="card-class">Масса</th>
-                <th class="card-price">500 г</th>
+              <tr class="weight-desc__row row">
+                <th class="row__card-class">Масса</th>
+                <th class="row__card-price">500 г</th>
               </tr>
-              <tr>
-                <th class="card-class">Вкус</th>
-                <th class="card-price" >Рис</th>
+              <tr class="weight-desc__row row">
+                <th class="row__card-class">Вкус</th>
+                <th class="row__card-price" >Рис</th>
               </tr>
-              <tr>
-                <th class="card-class">Цена</th>
-                <th class="card-price">500 Р.</th>
+              <tr class="weight-desc__row row">
+                <th class="row__card-class">Цена</th>
+                <th class="row__card-price">500 Р.</th>
               </tr>
             </table>
-            <button class="list-card__button order-button" type="button">Заказать</button>
-          </li>
-
-          <li class="production-list__card list-card">
-            <a class="list-card__link" href="catalog.html">
-            <img class="list-card__image" src="img/plus-catalog.svg" width="30" height="30" alt="Show more">
-            <h3 class="list-card__title">Показать еще 100500 товаров</h3></a>
-            <p class="list-card__text">На самом деле вкусов гораздо больше!</p>
-            <button class="list-card__button order-button show-more" type="button">Показать все</button>
+            <button class="list-card__button main-button" type="button">Заказать</button>
           </li>
         </ul>
+          <div class=" last-list-card">
+            <a class="last-list-card__link" href="catalog.html">
+            <img class="last-list-card__image" src="img/plus-catalog.svg" width="30" height="30" alt="Show more">
+            <h3 class="last-list-card__title">Показать еще 100500 товаров</h3></a>
+            <p class="last-list-card__text">На самом деле вкусов гораздо больше!</p>
+            <button class="last-list-card__button main-button show-more" type="button">Показать все</button>
+          </div>
+
       </section>
 
       <section class="catalog-production-additionally">
@@ -209,7 +208,7 @@
               <b class="card-class">1 упаковка (100 г)</b>
               <b class="card-price">200 Р.</b>
             </div>
-            <button class="additionally-card__button order-button" type="button">Заказать</button>
+            <button class="additionally-card__button main-button" type="button">Заказать</button>
           </li>
 
           <li class="production-list-additionally__card additionally-card">
@@ -218,7 +217,7 @@
               <b class="card-class">5 литров</b>
               <b class="card-price">50 Р.</b>
             </div>
-            <button class="additionally-card__button order-button" type="button">Заказать</button>
+            <button class="additionally-card__button main-button" type="button">Заказать</button>
           </li>
 
           <li class="production-list-additionally__card additionally-card">
@@ -227,7 +226,7 @@
               <b class="card-class">1 литр</b>
               <b class="card-price">100 Р.</b>
             </div>
-            <button class="additionally-card__button order-button" type="button">Заказать</button>
+            <button class="additionally-card__button main-button" type="button">Заказать</button>
           </li>
 
           <li class="production-list-additionally__card additionally-card">
@@ -236,7 +235,7 @@
               <b class="card-class">1 упаковка (30 г)</b>
               <b class="card-price">300 Р.</b>
             </div>
-            <button class="additionally-card__button order-button" type="button">Заказать</button>
+            <button class="additionally-card__button main-buttonv" type="button">Заказать</button>
           </li>
         </ul>
       </section>
