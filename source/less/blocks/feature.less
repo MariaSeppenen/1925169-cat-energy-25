@@ -44,3 +44,22 @@
   top: 1px;
   right: 1px;
 }
+
+@media (min-width: @tablet-width) {
+  .promo-wrapper-text {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    margin-left: 30px;
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-wrapper-text {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-left: 110px;
+  }
+}

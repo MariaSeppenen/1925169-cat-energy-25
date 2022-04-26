@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -9,9 +10,9 @@
     <header class="main-header">
 
       <div class="header-logo">
-        <a class="logo-images">
+        <!-- <a class="logo-images">
           <img class="header-logo-images" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип «Кэт энерджи»">
-        </a>
+        </a> -->
         <a class="logo-text">
           <img class="header-logo-text" src="img/logo-text.svg" width="101" height="18" alt="Логотип с назывнием «Кэт энерджи».">
         </a>
@@ -24,16 +25,16 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
+            <li class="site-list__item site-list__item--active site-list-item">
+              <a class="site-list-item__link">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+            <li class="site-list__item site-list-item">
+              <a class="site-list-item__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+            <li class="site-list__item site-list-item">
+              <a class="site-list-item__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -48,6 +49,7 @@
           <h1 class="promo-wrapper-text__title">Функциональное питание для котов</h1>
           <p class="promo-wrapper-text__slogan promo-food-image">Занялся собой? Займись котом!</p>
         </div>
+        <img src="./img/promo-food.png" width="280" height="270" alt="Кэт энерджи с курицей">
         <a class="promo__form main-button" href="#">Подобрать программу</a>
 
       </section>
@@ -101,7 +103,7 @@
           <dl class="stats-wrapper__list">
             <div class="stats-progress progress">
               <div class="stats-progress__item stat-progress">
-                <p class="stat-progress__number">5 кг</p>
+                <dt class="stat-progress__number">5 кг</dt>
                 <dd class="stat-progress__description">Cнижение веса</dd>
               </div>
               <div class="stats-progress__item stat-progress">
