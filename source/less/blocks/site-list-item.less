@@ -1,4 +1,26 @@
 .site-list-item__link {
   color: #000000;
   text-decoration: none;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list-item__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list-item__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 40px;
+  }
 }
