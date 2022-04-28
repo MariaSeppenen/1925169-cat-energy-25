@@ -1,5 +1,6 @@
 .promo__wrapper {
-  // background-blend-mode: multiply;
+  // background-blend-mode: multiply
+  width: 100%;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url(/source/img/promo-cat.jpg);
   background-position: top;
   background-repeat: repeat, no-repeat;
@@ -15,3 +16,18 @@
   margin: 0 20px;
   padding: 7px 44px;
 }
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    display: flex;
+    width: 640px;
+    margin-left: 117px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    width: 1220px;
+    margin-left: 190px;
+  }
