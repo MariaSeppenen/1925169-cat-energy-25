@@ -1,4 +1,6 @@
 .promo__wrapper {
+  display: flex;
+  flex-direction: column;
   // background-blend-mode: multiply
   width: 100%;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url(/source/img/promo-cat.jpg);
@@ -19,10 +21,15 @@
 
 @media (min-width: @tablet-width) {
   .promo__wrapper {
-    display: flex;
     width: 640px;
     margin-left: 117px;
     background-color: #ffffff;
+  }
+
+  .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -30,5 +37,15 @@
   .promo__wrapper {
     width: 1220px;
     margin-left: 190px;
+    color: #000000;
+  }
+
+  .promo {
+    display: flex;
+    align-items: center;
+  }
+
+  .promo__form {
+
   }
 }
