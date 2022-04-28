@@ -2,8 +2,7 @@
   max-width: 100%;
   min-width: 280px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding: 20px;
   padding-top: 10px;
   padding-bottom: 17px;
@@ -12,6 +11,7 @@
 @media (min-width: @tablet-width) {
   .main-header {
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: 708px;
   }
@@ -20,6 +20,7 @@
 @media (min-width: @desktop-width) {
   .main-header {
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: 1220px;
   }
